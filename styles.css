@@ -1,4 +1,4 @@
-/* TODO: use display switch? */
+/* ?? use display switch? */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -29,15 +29,87 @@
 }
 body {
   background-color: black;
-}
-div.page-wrap {
-  background-image: url(assets/desktop/bg-image-daytime.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: #FFFFFF;
   font-family: Inter, 'Trebuchet MS', sans-serif;
+}
+div.background-img {
+  background-image: url(assets/desktop/bg-image-daytime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   max-height: 800px;
-  margin: 15px auto;
   width: 100vw;
   max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div.background-img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+div.page-wrap {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 1110px
+}
+.quote {
+  font-size: 18px;
+  line-height: 28px;
+  height: 125px;
+  width: 573px;
+  margin-top: 56px;
+  /* temp border */
+  border: 2px solid #c9bcbcb9;
+  /*box-sizing: border-box;*/
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 288px;
+  margin-top: 233px;
+}
+div.currently {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  width: 484px;
+}
+.currently img {
+  padding-right: 16px;
+}
+div.currently * {
+  flex-shrink: 0;
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+div.time {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  justify-content: space-between;
+  width: 575px;
+}
+.time h1 {
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  line-height: 100%;
+  height: 200;
+  width: 487px;
+}
+.time p {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 28px;
+  /*padding-left: 11px;*/
+  text-transform: uppercase;
+
 }

@@ -4,24 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./assets/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="assets/challenge.png" rel="icon" type="image/png" sizes="32x32">
   <link href="styles.css" rel="stylesheet">
   <title>Clock App</title>
 </head>
 
 <body>
-  <div class="page-wrap">
-    , it's currently
+  <div class="background-img">
+    <div class="page-wrap">
+      <div class="quote">
+        “The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”
+        <img src="assets/desktop/icon-refresh.svg" alt="refresh icon">
+        <br>
+        <!--TODO: ↓ ↓ -->
+        :PULL FROM API:
+      </div>
 
-    in
+      <div class="content">
+        <div class="currently">
+          <img src="assets/desktop/icon-sun.svg" alt="sun icon">
+          <div class="morning-night">
+            Good morning
+          </div>
+          <p>, it's currently</p>
+        </div>
+        <!--* ↓ PLACEHOLDER div for time ↓ -->
+        <div class="time">
+          <h1>11:37</h1>
+          <p>BST</p>
+        </div>
+        in
+        <!-- *PLACEHOLDER div for location -->
 
-    More
-    Less
+        More
+        Less
 
-    Current timezone
-    Day of the year
-    Day of the week
-    Week number
+        Current timezone
+        Day of the year
+        Day of the week
+        Week number
+      </div>
+    </div>
   </div>
 </body>
 
